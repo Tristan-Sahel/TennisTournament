@@ -1,0 +1,660 @@
+/*
+##################################		GENERAL FORMATTING		##################################
+*/
+
+html, body{
+	margin: 0px;
+	height: 100%;
+	background: #F2F1F0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: black;	
+}
+
+h1, h2{
+	font-family: 'TitleFont';
+	color: white;
+	text-shadow: 0px 0px 9px #777;
+}
+
+#languages li{
+	font-family: 'TitleFont';
+}
+
+
+ul li a, ul li, ul li p{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ul li a:hover, ul li:hover, ul li p:hover{
+	cursor: pointer;
+}
+
+.titleFont{
+	font-family: 'TitleFont';
+}
+
+@font-face {
+	font-family: 'TitleFont';
+	src: url('../fonts/titleFont.TTF');
+}
+
+/*
+#########################################	THE CONTAINERS		#####################################
+*/
+
+#bigcontainer{
+	width: 1100px;
+	position: relative;
+	display: block;
+	top: 98px;
+	margin: auto;
+}
+
+#container{
+	width: 1000px;
+	margin: auto;
+}
+
+#page{
+	padding-top: 50px;
+}
+
+#pageContainer{
+	width: 800px;
+	margin: auto;
+}
+
+/*
+#########################################	INSIDE THE PAGES		#####################################
+*/
+
+.article{
+	display: inline-block;
+	margin-top : 1%;
+	margin-bottom: 1%;
+	/*background: #011945;
+	color: white;*/
+	background: white;
+	box-shadow: 2px 2px 6px #7f7f7f;
+}
+
+.leftArticle{
+	max-width: 680px;
+}
+
+.articleFloatRightPic{
+	float: right;
+	max-width: 250px;
+	margin-left: 20px;
+}
+
+.floatAtTheRightOfArticle{
+	background-color: white;
+	float: right;
+	max-width: 250px;
+	margin-top: 1%;
+	box-shadow: 2px 2px 6px #7f7f7f;
+
+}
+
+.floatAtTheLeftOfArticle{
+	float: left;
+	background-color: white;
+	max-width: 250px;
+	margin-right: 20px;
+	margin-top: 1%;
+	box-shadow: 2px 2px 6px #7f7f7f;
+
+}
+
+.centerArticle{
+	width: 95%;
+	text-align: justify;
+	padding: 2%;
+}
+
+.bigButtons a:hover{
+	background: white;
+}
+
+.bigButtons a{
+	padding: 10px;
+	min-width: 16%;
+	max-width: 16.5%;
+	display: inline-block;
+	border: 1px solid black;
+	margin: auto;
+	margin-bottom: 1%;
+}
+
+.privatePic{
+	max-width: 15%;
+	display: inline-block;
+	margin-top: 4%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.blockLink{
+	text-align:center;
+	position: relative;
+	margin-top : 5px;
+	height: 100%;
+}
+
+.blockLink p{
+	display: block;
+	width: 100%;
+	bottom: 0px;
+	color: black;
+	margin: 0px;
+}
+
+.blockLinkPic{
+	width: 100%;
+	height: 100px;
+	display: block;
+	margin: auto;
+}
+
+#servicesCover{
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+.fillingDiv{
+	display: inline-block;
+	width: 125px;
+}
+
+.newPage{
+	height: 200px;
+}
+
+.newPageMini{
+	height: 100px;
+}
+
+.fakeFooter{
+	display: block;
+	height: 70px;
+}
+
+.book{
+	margin : 50px;
+	width: 300px;
+}
+
+
+/*
+##################################		THE HEADER		####################################
+*/
+
+#header{
+	width: 100%;
+	height: 98px;
+	background: white;
+	position: fixed;
+	z-index: 1;
+}
+
+#subHeader{
+
+	width: 1000px;
+	height: 98px;
+	margin : auto;
+	position: relative;
+}
+
+/*Logo*/
+#logo{
+	height: 53px;
+	margin: auto;
+	max-width: 280px;
+}
+
+#linkLogo{
+	display: inline-block;
+	height: 76px;
+	margin: auto;
+	padding-top: 22px;
+}
+
+#linkLogo:hover{
+	cursor: pointer;
+}
+
+/*Horizontal menu*/
+#menu{
+	display: inline-block;
+	width: 700px;
+	margin: 0;
+	position: absolute;
+	right: 0%;
+	top: 0;
+	height: 100px;
+}
+
+.firstDegreeMenu{
+	position: relative;
+	display: inline-block;
+	width : 150px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	vertical-align: top;
+}
+
+.firstDegreeMenu:hover{
+}
+
+#menu li:hover{
+	margin-right: 0;
+	margin-bottom: 0;
+	background-color:  #2A3966;
+}
+
+.firstDegreeMenu p{
+	display: block;
+	margin: 0;
+	font-size: 75%;
+	width: 100%;
+	max-height: 100px;
+	font-family: 'TitleFont';
+	position: absolute;
+}
+
+#menu li p:hover{
+	color: white;
+}
+
+.headerDynPos{
+	line-height:20px; 
+	padding-top:30px;
+}
+
+.bluemenu{
+	background-color: #2A3966;
+	color: white;
+}
+
+.bluemenuPersistent{
+	background-color: #2A3966;
+	color: white;
+}
+
+
+/*********************************		Scrolling menu		**********************/
+.scrollingMenu{
+	position: relative;
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	top: 100px;
+	width: 150px;
+	display: none;
+	line-height: normal;
+}
+
+.scrollingMenu li{
+	display: block;
+	text-align: center;
+	height: auto;
+	line-height: normal;
+	position: relative;
+	color: black;
+}
+
+.scrollingMenu li:hover{
+	margin-right: 0;
+	margin-bottom: 0;
+	background-color: #2A3966;
+}
+
+.scrollingMenu li p{
+	font-family: 'TitleFont';
+	display: block;
+	margin: 0;
+	font-size: 13px;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom : 10px;
+}
+
+.scrollingMenu li p:hover{
+	color: white;
+}
+
+
+/************************************		The language selector		************************************/
+#languages{
+	position: absolute;
+	top : 0px;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#languages li{
+	display: inline-block;
+	color: gray;
+}
+
+#languages li p{
+	margin: 0;
+}
+
+.activeLanguage{
+	color: blue;
+	text-decoration: underline;
+}
+
+/*
+#####################################################		THE FOOTER		#################################################
+*/
+
+
+#footer p{
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	padding: 5px;
+	margin: 0;
+	font-family: 'TitleFont';
+	color: white;
+}
+
+#footer{
+	position: fixed;
+	bottom:0px;
+	font-size: 13px;
+	height: 70px;
+	width: 100%;
+	margin: auto;
+	/*background-image:linear-gradient(#B6B6B6, #254076);*/
+	background: url(../pics/gradient.png) repeat bottom;
+}
+
+#footer ul li{
+	display: inline-block;
+	padding: 4px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align : middle;
+	font-family: 'TitleFont';
+	color: white;
+}
+
+#footer ul li:hover{
+	background-color: #6A6AA8;
+	color: white;
+}
+
+#footer ul{
+	margin: 0;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+#footer li img{
+	display: block;
+	margin: auto;
+	height:20px;
+	margin-top: 5px;
+}
+
+#footer a{
+	height: 100%;
+	display: block;
+}
+
+#wave{
+	position: absolute;
+	top: 0px;
+	height: 50px;
+	width: 100%;
+}
+
+
+/*
+############################################		THE HOME PAGE 		######################################
+*/
+
+#middlediv{
+	height: 400px;
+	position: relative;
+}
+
+#homeImage{
+	width: 800px;
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	cursor: pointer;
+}
+
+
+/*The image switcher menu on the home page*/
+#picMenu{
+	position: absolute;
+	display: inline-block;
+	right: 0px;
+	background-color: #171747;
+	color: white;
+	width: 200px;
+	padding: 0;
+	top: 0;
+	margin: 0;
+	height: 400px;
+}
+
+#picMenu li{
+	text-align: center;
+	height: 80px;
+	line-height: 80px;
+	vertical-align: middle;
+	font-family: 'TitleFont';
+	font-size: 75%;
+}
+
+#picMenu li:hover{
+	background-color: gray;
+}
+
+.clickableLink{
+
+}
+
+.clickedImg{
+	background-color: #2A3966;
+}
+
+#homeQuickLaunchers{
+	display: block;
+	background-color: white;
+	margin-top: 10px;
+	box-shadow: 2px 2px 6px #7f7f7f;
+}
+
+#homeQuickLaunchers ul{
+	width: 760px;
+	margin: auto;
+	padding: 0;
+}
+
+#homeQuickLaunchers li{
+	display: inline-block;
+	vertical-align: top;
+	width: 240px;
+	height: 220px;
+	padding: 5px;
+}
+
+#homeQuickLaunchers li:hover{
+	text-decoration: underline;
+}
+
+#homeQuickLaunchers img{
+	width: 240px;
+	max-height: 200px;
+	margin: auto;
+}
+
+#homeNews{
+	display: block;
+}
+
+#homeNews p{
+	display: inline-block;
+	vertical-align: top;
+	background-color: #2A3966;
+	margin-right: 20px;
+	color: white;
+	padding: 5px;
+	font-family: 'TitleFont';
+}
+
+#homeNews .more{
+	text-decoration: underline;
+	position: absolute;
+	right: 25px;
+}
+
+#homeNews ul{
+	display: inline-block;
+	width: 80%;
+}
+
+#homeNews li{
+	display: block;
+	background: white;
+	margin-bottom: 5px;
+	height: 60px;
+	position: relative;
+	box-shadow: 2px 2px 6px #7f7f7f;
+}
+
+#homeNews h3{
+	margin-top: 10px;
+}
+
+/*
+############################################		THE LEFT FIXED MENU :  GENERAL FORMATING		######################################
+*/
+
+.leftMenu{
+	position: fixed;
+	top: 300px;
+	left: 10%;
+	max-width: 200px;
+	background:  #B6B6B6;
+	color: white;
+	padding: 2px;
+	border: 1px solid #254076;
+}
+
+.leftMenu li{
+	position: relative;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+.leftMenu li:hover{
+	background: #323644;
+}
+
+.leftMenu .active{
+	background: #254076;
+}
+
+.leftMenu a{
+	left: 0px;
+	color: white;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	font-family: 'TitleFont';
+}
+
+/*
+############################################		THE MENU AT THE RIGHT OF THE SERVICES PAGE 		######################################
+*/
+
+#menuServicesRight{
+}
+
+/*
+############################################		THE MENU AT THE RIGHT OF THE SOCIETY PAGE 		######################################
+*/
+#menuSocietyRight{
+}
+
+/*
+############################################		THE MENU AT THE RIGHT OF THE DYNAMIC POSITIONING PAGE 		######################################
+*/
+#menuDynamicRight{
+
+}
+
+/*
+############################################		THE MENU AT THE RIGHT OF THE REFERENCES PAGE 		######################################
+*/
+#menuReferencesRight{
+	width: 170px;
+}
+
+/*
+############################################		NEWS PAGE 		######################################
+*/
+#pageContainerNews{
+	position: relative;
+}
+
+#newsContainer{
+	width: 80%;
+}
+
+.new{
+	width: 90%;
+	margin-bottom: 100px;
+	padding: 10px;
+}
+
+#newsPicsContainer{
+	position: absolute;
+	width: 20%;
+	right: 0px;
+	top: 0;
+}
+
+#newsPicsContainer img{
+	max-width: 200px;
+	margin: auto;
+	margin-bottom: 100px;
+}

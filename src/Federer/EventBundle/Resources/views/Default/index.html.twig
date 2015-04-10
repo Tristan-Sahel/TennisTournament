@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+
+{% block title 'JeanFred Federer!' %}
+{% block body %}
+{% for i in 1..10%}
+Hello <strong>{{ name|upper }}</strong> # {{ i }} !<br/>
+
+{% endfor %}
+<h2>Event Details</h2>
+{{ event.name }}<br/>
+{% endblock %}
